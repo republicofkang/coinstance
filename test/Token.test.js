@@ -7,8 +7,8 @@ require('chai')
 contract('Token', accounts => {
   const name = 'Coinstance';
   const symbol = 'CNC';
-  const decimals = '9';
-  const totalSupply = '1000000000';
+  const decimals = '18';
+  const totalSupply = '1000000000000000000000000';
   let token;
 
   beforeEach(async () => {
@@ -16,17 +16,17 @@ contract('Token', accounts => {
   });
 
   describe('deployment', () => {
-    it('tracks the token name', async () => {
+    it('tracks the name', async () => {
       const result = await token.name();
       result.should.equal(name);
     });
 
-    it('tracks the token symbol', async () => {
+    it('tracks the symbol', async () => {
       const result = await token.symbol();
       result.should.equal(symbol);
     });
 
-    it('tracks the token decimals', async () => {
+    it('tracks the decimals', async () => {
       const result = await token.decimals();
       result.toString().should.equal(decimals);
     });
