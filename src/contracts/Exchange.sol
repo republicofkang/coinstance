@@ -27,11 +27,6 @@ import "openzeppelin-solidity/contracts/math/SafeMath.sol";
 // [x] Fill order
 // [x] Charge fees
 
-pragma solidity ^0.5.0;
-
-import "./Token.sol";
-import "openzeppelin-solidity/contracts/math/SafeMath.sol";
-
 contract Exchange {
     using SafeMath for uint;
 
