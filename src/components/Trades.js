@@ -35,8 +35,8 @@ class Trades extends Component {
               <thead>
                 <tr>
                   <th>Time</th>
-                  <th>DAPP</th>
-                  <th>DAPP/ETH</th>
+                  <th>CNC</th>
+                  <th>CNC/ETH</th>
                 </tr>
               </thead>
               {this.props.filledOrdersLoaded ? (

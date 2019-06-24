@@ -23,7 +23,7 @@ const showPriceChart = priceChart => {
     <div className="price-chart">
       <div className="price">
         <h4>
-          DAPP/ETH &nbsp; {priceSymbol(priceChart.lastPriceChange)} &nbsp;{' '}
+          CNC/ETH &nbsp; {priceSymbol(priceChart.lastPriceChange)} &nbsp;{' '}
           {priceChart.lastPrice}
         </h4>
       </div>
