@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import Navbar from './Navbar';
 import Content from './Content';
+import LandingPage from './LandingPage';
 import { connect } from 'react-redux';
 import {
   loadWeb3,
@@ -10,6 +11,7 @@ import {
   loadExchange
 } from '../store/interactions';
 import { contractsLoadedSelector } from '../store/selectors';
+import { BrowserRouter, Switch, Route, Link } from 'react-router-dom';
 
 class App extends Component {
   componentWillMount() {
@@ -39,10 +41,18 @@ class App extends Component {
 
   render() {
     return (
-      <div>
-        <Navbar />
-        {this.props.contractsLoaded ? <Content /> : <div className="content" />}
-      </div>
+      <BrowserRouter>
+        <div>
+          <Navbar />
+          <Route exact path="/" component={LandingPage} />
+          {this.props.contractsLoaded ? (
+            <Route exact path="/trade" component={Content} />
+          ) : (
+            <div className="content" />
+          )}
+          {/* <Route exact path="/trade" component={Content} /> */}
+        </div>
+      </BrowserRouter>
     );
   }
 }
