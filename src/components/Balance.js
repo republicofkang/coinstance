@@ -95,7 +95,7 @@ const showForm = props => {
         <table className="table table-dark table-sm small">
           <tbody>
             <tr>
-              <td>DAPP</td>
+              <td>CNC</td>
               <td>{tokenBalance}</td>
               <td>{exchangeTokenBalance}</td>
             </tr>
@@ -119,7 +119,7 @@ const showForm = props => {
           <div className="col-12 col-sm pr-sm-2">
             <input
               type="text"
-              placeholder="DAPP Amount"
+              placeholder="CNC Amount"
               onChange={e =>
                 dispatch(tokenDepositAmountChanged(e.target.value))
               }
@@ -187,7 +187,7 @@ const showForm = props => {
         <table className="table table-dark table-sm small">
           <tbody>
             <tr>
-              <td>DAPP</td>
+              <td>CNC</td>
               <td>{tokenBalance}</td>
               <td>{exchangeTokenBalance}</td>
             </tr>
@@ -211,7 +211,7 @@ const showForm = props => {
           <div className="col-12 col-sm pr-sm-2">
             <input
               type="text"
-              placeholder="DAPP Amount"
+              placeholder="CNC Amount"
               onChange={e =>
                 dispatch(tokenWithdrawAmountChanged(e.target.value))
               }
