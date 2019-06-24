@@ -7,7 +7,7 @@ class Navbar extends Component {
     return (
       <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
         <a className="navbar-brand" href="#/">
-          DApp Token Exchange
+          Coinstance Token Exchange
         </a>
         <button
           className="navbar-toggler"
