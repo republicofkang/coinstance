@@ -78,7 +78,7 @@ class MyTransactions extends Component {
                 <thead>
                   <tr>
                     <th>Amount</th>
-                    <th>DAPP/ETH</th>
+                    <th>CNC/ETH</th>
                     <th>Cancel</th>
                   </tr>
                 </thead>
