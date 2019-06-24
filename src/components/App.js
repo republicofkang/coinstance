@@ -11,7 +11,7 @@ import {
   loadExchange
 } from '../store/interactions';
 import { contractsLoadedSelector } from '../store/selectors';
-import { BrowserRouter, Switch, Route, Link } from 'react-router-dom';
+import { BrowserRouter, Route } from 'react-router-dom';
 
 class App extends Component {
   componentWillMount() {
@@ -50,7 +50,6 @@ class App extends Component {
           ) : (
             <div className="content" />
           )}
-          {/* <Route exact path="/trade" component={Content} /> */}
         </div>
       </BrowserRouter>
     );

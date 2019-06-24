@@ -1,7 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import welcomeimg from '../assets/img/welcome-img.png';
-const html = require('html-template-tag');
 
 const LandingPage = props => {
   return (
