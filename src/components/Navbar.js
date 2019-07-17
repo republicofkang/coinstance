@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { accountSelector } from '../store/selectors';
-import { BrowserRouter, Switch, Route, Link } from 'react-router-dom';
+import { BrowserRouter } from 'react-router-dom';
 
 class Navbar extends Component {
   render() {

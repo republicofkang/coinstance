@@ -3,13 +3,13 @@ import welcomeimg from '../assets/img/welcome-img.png';
 
 const LandingPage = props => {
   return (
-    <div class="welcome-area wow fadeInUp" id="home">
+    <div className="welcome-area wow fadeInUp" id="home">
       <div id="particles-js" />
-      <div class="container">
-        <div class="row">
-          <div class="col-12 col-md-6 align-self-center">
-            <div class="welcome-right">
-              <div class="welcome-text">
+      <div className="container">
+        <div className="row">
+          <div className="col-12 col-md-6 align-self-center">
+            <div className="welcome-right">
+              <div className="welcome-text">
                 <h1>
                   Introducing Coinstance: A New Crypto Token That Runs on
                   Ethereum Blockchain{' '}
@@ -19,16 +19,16 @@ const LandingPage = props => {
                   here in our exchange.
                 </h4>
               </div>
-              <div class="welcome-btn">
-                <a href="/trade" class="gradient-btn v2 mr-20">
+              <div className="welcome-btn">
+                <a href="/trade" className="gradient-btn v2 mr-20">
                   Trade Coinstance
                 </a>
               </div>
             </div>
           </div>
-          <div class="col-12 col-md-6">
-            <div class="welcome-img">
-              <img src={welcomeimg} />
+          <div className="col-12 col-md-6">
+            <div className="welcome-img">
+              <img src={welcomeimg} alt="background" />
             </div>
           </div>
         </div>
